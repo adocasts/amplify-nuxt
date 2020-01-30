@@ -7,8 +7,9 @@ Video Series:
 
 ### In this series we'll be going over:
 
-- [x] How to setup and configure AWS Amplify in a new Nuxt project
-- [ ] How to add authentication using the Auth class exposed by Amplify
+- [x] [How to setup and configure AWS Amplify in a new Nuxt project](https://www.youtube.com/watch?v=bM0iisnRYUk&list=PL9dIWiKCV573u7FUcj6bF1vwunYFEDA6Y&index=2&t=0s)
+- [x] How to add authentication with AWS Amplify in a Nuxt app (Part 1, Setup)
+- [ ] How to add authentication with AWS Amplify in a Nuxt app (Part 2, Implementation)
 - [ ] How to add an anotated GraphQL API with public and private auth guards
 - [ ] How to deploy our application via Amplify CLI on S3
 
