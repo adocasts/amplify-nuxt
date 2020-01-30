@@ -1,34 +1,39 @@
 <template>
   <div class="max-w-md mx-auto pt-6">
     <div>
-      <h1 class="text-xl mb-3">Register</h1>
+      <h1 class="mb-3">Register</h1>
 
-      <!-- Not Authenticated -->
+      <!-- Unauthenticated -->
       <div v-if="!$auth.isAuthenticated">
-        <!-- Register Form -->
+        <!-- Register -->
         <form v-if="step === steps.register" @submit.prevent="register">
-          <input v-model="registerForm.email" placeholder="Email" class="form-control" type="email" />
+          <input v-model="registerForm.email" type="email" placeholder="Email" class="form-control" />
           <input
             v-model="registerForm.password"
+            type="password"
             placeholder="Password"
             class="form-control"
-            type="password"
           />
           <button type="submit" class="button--green">Register</button>
         </form>
 
-        <!-- Confirm Registration Form -->
+        <!-- Confirm Registration -->
         <form v-else @submit.prevent="confirm">
-          <input v-model="confirmForm.email" placeholder="Email" class="form-control" type="email" />
+          <input v-model="confirmForm.email" type="email" placeholder="Email" class="form-control" />
           <input v-model="confirmForm.code" placeholder="Code" class="form-control" />
           <button type="submit" class="button--green">Confirm</button>
         </form>
+
+        <nuxt-link to="/login">Have an account? Login</nuxt-link>
       </div>
 
       <!-- Authenticated -->
       <div v-else>
-        <p>You're logged in as {{ $auth.email }}</p>
-        <button @click="$auth.logout()" class="button--grey">Logout</button>
+        You're logged in as {{ $auth.email }}.
+        <button
+          @click="$store.dispatch('auth/logout')"
+          class="button--green"
+        >Logout</button>
       </div>
     </div>
   </div>
@@ -57,7 +62,7 @@ export default {
   methods: {
     async register() {
       try {
-        await this.$auth.register(this.registerForm)
+        await this.$store.dispatch('auth/register', this.registerForm)
         this.confirmForm.email = this.registerForm.email
         this.step = this.steps.confirm
       } catch (error) {
@@ -67,8 +72,8 @@ export default {
 
     async confirm() {
       try {
-        await this.$auth.confirmRegistration(this.confirmForm)
-        await this.$auth.login(this.registerForm)
+        await this.$store.dispatch('auth/confirmRegistration', this.confirmForm)
+        await this.$store.dispatch('auth/login', this.registerForm)
         this.$router.push('/')
       } catch (error) {
         console.log({ error })
