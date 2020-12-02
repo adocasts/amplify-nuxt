@@ -11,7 +11,9 @@ Video Series:
 - [x] [How to add authentication using AWS Amplify's Auth Class in a Nuxt app (Auth Part 1)](https://jagr.co/posts/how-to-add-authentication-using-aws-amplifys-auth-class-in-a-nuxt-app), [Jagr](https://jagr.co/posts/how-to-add-authentication-using-aws-amplifys-auth-class-in-a-nuxt-app) / [YouTube](https://www.youtube.com/watch?v=fzcG5Oe31bo&list=PL9dIWiKCV573u7FUcj6bF1vwunYFEDA6Y&index=3&t=1s)
 - [x] [Adding register and login flows using AWS Amplify in a Nuxt app (Auth Part 2)](https://jagr.co/posts/adding-register-and-login-flows-using-aws-amplify-in-a-nuxt-app), [Jagr](https://jagr.co/posts/adding-register-and-login-flows-using-aws-amplify-in-a-nuxt-app) / [YouTube](https://www.youtube.com/watch?v=Q4eaOQCWCJk&list=PL9dIWiKCV573u7FUcj6bF1vwunYFEDA6Y&index=4&t=0s)
 - [x] [How to add an anotated GraphQL API with public and private auth guards](https://jagr.co/posts/how-to-add-a-public-and-private-graphql-api-with-aws-amplify), [Jagr](https://jagr.co/posts/how-to-add-a-public-and-private-graphql-api-with-aws-amplify) / [YouTube](https://www.youtube.com/watch?v=WMtF4Gk3cD4)
-- [ ] How to deploy our application via Amplify CLI on S3
+- [x] [How to deploy our application via Amplify CLI on S3](https://jagr.co/posts/amplify-nuxt-how-to-deploy-to-amplify-as-an-spa), [Jagr](https://jagr.co/posts/amplify-nuxt-how-to-deploy-to-amplify-as-an-spa) / [YouTube](https://www.youtube.com/watch?v=tcsJaRyiC0A&list=PL9dIWiKCV573u7FUcj6bF1vwunYFEDA6Y&index=6)
+- [x] [How to deploy our application for production](https://jagr.co/posts/amplify-nuxt-how-to-setup-a-production-deployment), [Jagr](https://jagr.co/posts/amplify-nuxt-how-to-setup-a-production-deployment) / [YouTube](https://www.youtube.com/watch?v=jvwOQBcJdI4&list=PL9dIWiKCV573u7FUcj6bF1vwunYFEDA6Y&index=7)
+- [x] [How to use a custom domain in AWS Amplify](https://jagr.co/posts/how-to-use-a-custom-domain-in-aws-amplify-with-route53), [Jagr](https://jagr.co/posts/how-to-use-a-custom-domain-in-aws-amplify-with-route53) / [YouTube](https://www.youtube.com/watch?v=gldpw-WNbrU&list=PL9dIWiKCV573u7FUcj6bF1vwunYFEDA6Y&index=8)
 
 ### When Cloning
 
@@ -25,6 +27,6 @@ This will pull down the amplify directory in addition to generating your `aws-ex
 
 ### Find Us
 
-- WebSite: [coming soon - in development]
+- WebSite: https://jagr.co
 - YouTube: https://youtube.com/jagrco
 - Twitter: https://twitter.com/jagr_co

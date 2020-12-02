@@ -1,9 +1,9 @@
 import { getUser } from '~/src/graphql/queries'
 import { createUser } from '~/src/graphql/mutations'
 
-export const state = {
+export const state = () => ({
   user: null
-}
+})
 
 export const mutations = {
   setUser(state, user) {
